@@ -1,3 +1,6 @@
+:root {
+  --bgc: #406E;
+}
 html {
   background-color: #D9F7FA;
   min-height: 1000px;
@@ -18,7 +21,7 @@ h1 {
 }
 
 #heading {
-  background-color: #3083DC;
+  background-color: var(--bgc);
   text-align: center;
 }
 
@@ -36,7 +39,7 @@ h1 {
 
 input:checked+li {
   text-decoration: line-through;
-  text-decoration-color: #3083DC;
+  text-decoration-color: var(--bgc);
 }
 
 input[type="checkbox"] {
@@ -62,7 +65,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #3083DC;
+  background-color: var(--bgc);
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
@@ -82,7 +85,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #3083DC;
+  box-shadow: inset 0 -3px 0 0 var(--bgc);
 }
 
 ::placeholder {
@@ -97,7 +100,7 @@ footer {
 }
 
 .deleteButton {
-  color: #3083DC;
+  color: var(--bgc);
   cursor: pointer;
   float:right;
   margin-top: 25px;
@@ -119,4 +122,8 @@ footer {
 
 #addBtn {
   margin-left: 10px; 
+}
+#errorMessage{
+  color: red;
+  font-size: 1.2rem;
 }
